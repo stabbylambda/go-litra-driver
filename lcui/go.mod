@@ -4,9 +4,13 @@ go 1.21
 
 require (
 	fyne.io/fyne/v2 v2.4.4
-	github.com/kharyam/go-litra-driver/config v0.0.0-20240227171942-663b0dc31257
-	github.com/kharyam/go-litra-driver/lib v0.0.0-20240228141944-8e5189c15537
+	github.com/kharyam/go-litra-driver/config v0.0.0
+	github.com/kharyam/go-litra-driver/lib v0.0.0
 )
+
+replace github.com/kharyam/go-litra-driver/config v0.0.0 => ../config
+
+replace github.com/kharyam/go-litra-driver/lib v0.0.0 => ../lib
 
 require (
 	fyne.io/systray v1.10.1-0.20231115130155-104f5ef7839e // indirect
